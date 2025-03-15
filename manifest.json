@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Erase Comments from ChatGPT Code",
+    "description": "This extension removes comments from ChatGPT-generated code.",
+    "version": "1.0",
+    "permissions": [
+      "activeTab"
+    ],
+
+    "content_scripts": [
+      {
+        "matches": ["*://chatgpt.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
