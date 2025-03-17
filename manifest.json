@@ -4,8 +4,11 @@
     "description": "This extension removes comments from ChatGPT-generated code.",
     "version": "1.0",
     "permissions": [
-      "activeTab"
+      "activeTab",
+      "clipboardRead",
+      "clipboardWrite"
     ],
+    
 
     "content_scripts": [
       {
