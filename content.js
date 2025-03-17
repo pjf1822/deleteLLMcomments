@@ -20,7 +20,6 @@ document.addEventListener(
     const cloned = codeBlock.cloneNode(true);
     cloned.querySelectorAll(".hljs-comment").forEach((c) => c.remove());
     const plainText = cloned.innerText;
-
     const newCodeBlock = document.createElement("code");
     newCodeBlock.textContent = plainText;
 
@@ -47,22 +46,3 @@ observer.observe(document.body, {
 });
 
 window.addEventListener("load", removeCommentsFromCode);
-
-function factorial(n) {
-  if (n < 0 || !Number.isInteger(n)) {
-    return "Input must be a non-negative integer.";
-  }
-
-  let result = 1;
-
-  for (let i = 1; i <= n; i++) {
-    result *= i;
-  }
-
-  return result;
-}
-
-const number = 5;
-const fact = factorial(number);
-
-console.log(`The factorial of ${number} is ${fact}.`);
