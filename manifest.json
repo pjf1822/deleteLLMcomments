@@ -3,11 +3,9 @@
     "name": "ChatGPT Comment Eraser:",
     "description": "This extension removes comments from ChatGPT-generated code.",
     "version": "1.0",
-    "permissions": [
-      "activeTab",
-      "clipboardRead",
-      "clipboardWrite"
-    ],
+   "permissions": [
+    "clipboardWrite"
+  ],
     "action": {
       "default_popup": "popup.html",
       "default_icon": {
